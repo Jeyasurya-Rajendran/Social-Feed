@@ -1,0 +1,70 @@
+@import '../Variables/Theme.scss';
+
+.side-bar-panel, .side-bar-toggle{
+    width:270px;
+    background-color: $light-color;
+    padding: 15px 25px 200px;
+    overflow: scroll;
+    height: calc(100vh - 76px);
+}
+
+.avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @include text-primary;
+
+    .profile-text {
+        display: block;
+
+        .profile-name {
+            @include text-primary;
+        }
+
+        .profile-position {
+            @include text-ternary;
+            font-size: $font-small;
+            
+        }
+        .date{
+            @include text-secondary;
+            font-size: $font-small;
+        }
+    }
+}
+
+// Features
+.features {
+    padding-top: 10px;
+}
+
+.display-none {
+    display: none;
+}
+
+// Recently Added
+
+.recent-added {
+    padding-top: 10px;
+}
+
+// button
+@mixin feature-btn {
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.less-btn {
+    @include feature-btn();
+    background-color: $contrast-color;
+    color: $light-color;
+}

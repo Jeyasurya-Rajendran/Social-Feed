@@ -1,0 +1,16 @@
+.body-section{
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding-top: 76px;
+    overflow: auto;
+
+}
+
+@media (max-width:991.98px) {
+    .body-section{
+    padding-top: 64px;
+        display: inline-flex;
+
+    }
+}

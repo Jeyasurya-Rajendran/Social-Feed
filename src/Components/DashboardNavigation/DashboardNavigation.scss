@@ -1,0 +1,36 @@
+@import "../Variables/Theme.scss";
+
+header{
+    background-color: $light-color;
+    box-shadow: 0px 1px 3px #888888;
+    z-index: 100;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;  
+    position: fixed; 
+}
+
+.dashboard-navbar-elements{
+    padding: 10px;
+    font-size: $font-seconday;
+}
+
+.dashboard-navbar-secondary{
+    @extend .dashboard-navbar-elements;
+    @include text-secondary;
+}
+
+.dashboard-navbar-primary{
+    @extend .dashboard-navbar-elements;
+    @include text-primary;
+}
+
+.dashboard-navbar-left-icon{
+    @extend .dashboard-navbar-elements;
+    font-size: 30px;
+}
+
+.toggle-btn{
+    display: none;
+}

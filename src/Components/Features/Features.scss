@@ -1,0 +1,24 @@
+@import "../Variables/Theme.scss";
+
+.heading-primary {
+    @include text-primary;
+    padding: 30px 0px 10px;
+}
+
+.features-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    gap: 10px;
+
+    .feature-icon{
+        font-size: $font-primary;
+    }
+    .features-context{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+

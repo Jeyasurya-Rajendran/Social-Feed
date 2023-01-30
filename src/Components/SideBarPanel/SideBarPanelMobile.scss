@@ -1,0 +1,7 @@
+@import "../Variables/Theme.scss";
+
+@media (max-width:575.98px) {
+    .side-bar-panel,.side-bar-toggle{
+        width: 200px;
+    }
+}

@@ -1,0 +1,31 @@
+@import "../Variables/Theme.scss";
+
+@media (max-width:991.98px){
+    .post-flex{
+        .post-btn{
+            padding: 12px 20px;
+        }
+    }
+
+    .additional-features{  
+        font-size: $font-small;      
+        .media-icon{
+            margin-right: 5px;
+        }
+    }
+    .addOn{
+        background-color: $dark-color;
+        padding: 10px 7px;
+        border-radius: 20px;
+    }
+
+    .web-cam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attachment{
+        bottom: 30px;
+    }
+}

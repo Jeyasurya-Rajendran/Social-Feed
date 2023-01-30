@@ -1,0 +1,36 @@
+@import "../Variables/Theme.scss";
+
+@media (max-width:991.98px) {
+    $header-icon : 20px;
+    .header{
+        padding: 10px;
+    }
+    .toggle-btn {
+        // $header-icon : 35px;
+        display: block;
+        position: absolute;
+        right: 50px;
+        font-size: $header-icon;
+    }
+
+
+    .header-elements {
+        padding: 10px;
+        font-size: $font-seconday;
+    }
+
+    .header-secondary {
+        @extend .header-elements;
+        @include text-secondary;
+    }
+
+    .header-primary {
+        @extend .header-elements;
+        @include text-primary;
+    }
+
+    .header-left-icon {
+        @extend .header-elements;
+        font-size: $header-icon;
+    }
+}

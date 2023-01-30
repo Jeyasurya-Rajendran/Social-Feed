@@ -1,0 +1,18 @@
+@import "../Variables/Theme.scss";
+
+.card-input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    .card-textarea{
+        background-color: $dark-color;
+        border-radius: 30px;
+        height: 25px;
+        width: 100%;
+        padding: 12px 15px;
+        border: none;
+        resize: none;
+    }
+}

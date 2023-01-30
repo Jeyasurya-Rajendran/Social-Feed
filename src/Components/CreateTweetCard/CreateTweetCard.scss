@@ -1,0 +1,89 @@
+@import "../Variables/Theme.scss";
+
+textarea::-webkit-scrollbar {width: 5px !important}
+
+.post-flex{
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 20px;
+    .post-text{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .post-content{
+        margin: 0px 10px;
+        background-color: $dark-color;
+        width: 100%;
+        border:none;
+        border-radius: 20px;
+        padding: 12px 15px;
+        resize: none;
+        overflow-y: scroll;
+        height: auto;
+        display: flex;
+        min-height: 20px;
+    }
+
+    .post-content:focus{
+        outline: none !important;
+    }
+
+    .post-btn{
+        border: none;
+        background-color: $contrast-color;
+        color: $light-color;
+        border-radius: 30px;
+        padding: 12px 25px;
+
+    }
+}
+
+.additional-features{
+    display: flex;
+    justify-content: space-around;
+    .addOn{
+        cursor: pointer;
+    }
+    .media-icon{
+        margin-right: 5px;
+    } 
+}
+
+.attachment {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    justify-content: space-around;
+    .attachment-file, .web-cam-button,.audio-button{
+        width: 140px;
+        cursor: pointer;
+    }
+}
+
+.attachment-preview{
+   display: flex;
+   padding: 5px;
+}
+.cursor{
+    padding-left: 5px;
+    cursor: pointer;
+}
+.web-cam{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.audio-recorder{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.audio-preview{
+    display: flex;
+    align-items: flex-start;
+}

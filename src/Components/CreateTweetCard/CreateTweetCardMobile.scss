@@ -1,0 +1,11 @@
+@import "../Variables/Theme.scss";
+
+@media (max-width:576.98px) {
+    .attachment{
+        bottom: 30px;
+        left: 23px;
+        .attachment-file, .web-cam-button,.audio-button{
+            width:70px;
+        }
+    }
+}

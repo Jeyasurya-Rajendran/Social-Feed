@@ -1,0 +1,13 @@
+
+index.js
+--App.jsx
+---Header
+
+---Left panel
+-----Avatar
+-----Features-list
+
+
+---Right panel
+-----Post-card
+-----Text-card

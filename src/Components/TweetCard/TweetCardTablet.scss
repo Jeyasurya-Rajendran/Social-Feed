@@ -1,0 +1,9 @@
+@import "../Variables/theme.scss";
+
+@media (max-width:991.98px) {
+    .card-container{
+        .tweet-img{
+            width: 100%;
+        }
+    }
+}

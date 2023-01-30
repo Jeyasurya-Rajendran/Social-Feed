@@ -1,0 +1,58 @@
+$font-primary : 18px;
+$font-seconday : 16px;
+$font-small : 14px;
+$header-icon : 30px;
+// Mobile
+// $font-mobile-primary : 18px;
+// $font-mobile-seconday : 16px;
+// Colors
+$light-color : #ffffff;
+$dark-color : #e3e1e1;
+$contrast-color : #702963;
+
+// These are impossible , wither we can have separate value for mobiles and mobiles
+// // mobilelet 
+// @media (max-width:991.98px) {
+//     $font-primary : 16px;
+//     $font-seconday : 12px;
+// }
+
+// // mobile
+// @media (max-width: 575.98px) {
+//     $font-primary : 15px;
+//     $font-seconday : 11px;
+// }
+
+@mixin text-primary{
+    font-size: $font-primary;
+    font-weight: 700;
+}
+
+@mixin text-secondary{
+    font-size: $font-seconday;
+    font-weight: 400;
+}
+
+@mixin text-ternary{
+    font-size: $font-seconday;
+    font-weight: 100;
+}
+
+// mobile
+@mixin text-mobile-primary{
+    font-size: $font-mobile-primary;
+    font-weight: 700;
+}
+
+@mixin text-mobile-secondary{
+    font-size: $font-mobile-seconday;
+    font-weight: 400;
+}
+
+@mixin text-mobile-ternary{
+    font-size: $font-mobile-seconday;
+    font-weight: 100;
+}
+
+// Font 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');

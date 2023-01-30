@@ -1,0 +1,25 @@
+@import '../Variables/Theme.scss';
+
+@media (max-width:991.98px) {
+
+    .side-bar-panel,.side-bar-toggle{
+        position: fixed;
+        top: 64px;
+    }
+
+    .side-bar-panel{
+        right: -320px;
+        transition: all 0.75s;
+        z-index: 50;
+
+    }
+
+    .side-bar-toggle{
+        right: 0px;
+        transition: all 0.75s;
+        display: block;
+        z-index: 50;
+        overflow: scroll;
+    }
+    
+}

@@ -1,0 +1,183 @@
+// $font-primary : 20px;
+// $font-seconday : 16px;
+// $light-color : #ffffff;
+// $dark-color : #e3e1e1;
+
+// @mixin text-primary{
+//     font-size: $font-primary;
+//     font-weight: 700;
+// }
+
+// @mixin text-secondary{
+//     font-size: $font-seconday;
+//     font-weight: 400;
+// }
+
+// @mixin text-ternary{
+//     font-size: $font-seconday;
+//     font-weight: 100;
+// }
+
+// // Font 
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+
+body{
+    margin: 0px;
+    background-color: $dark-color;
+    font-family: 'Roboto';
+    font-size: $font-seconday;
+}
+
+// header-section
+// header{
+//     background-color: $light-color;
+//     box-shadow: 0px 1px 3px #888888;
+//     // position: absolute;
+//     z-index: 100;
+//     width: 100%;
+//     padding: 10px;
+//     display: flex;
+//     align-items: center;  
+//     position: fixed; 
+// }
+
+// .header-elements{
+//     padding: 10px;
+//     font-size: $font-seconday;
+// }
+
+// .header-secondary{
+//     @extend .header-elements;
+//     @include text-secondary;
+// }
+
+// .header-primary{
+//     @extend .header-elements;
+//     @include text-primary;
+// }
+
+// .header-left-icon{
+//     @extend .header-elements;
+//     font-size: 30px;
+// }
+
+// Body section
+.body-section{
+    display: flex;
+    width: 100%;
+}
+
+// Left panel
+.left-panel{
+    width: 25%;
+    background-color: $light-color;
+    height: auto;
+    padding: 90px 30px;
+}
+
+.avatar-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.avatar-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    @include text-primary;
+    .avatar-text{
+        display: block;
+        .avatar-name{
+            @include text-primary;
+        }
+        .avatar-position{
+            @include text-ternary;
+        }
+    }
+}
+
+// Features
+.features{
+    padding-top: 10px;
+}
+.features-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+
+    .feature-icon{
+        font-size: $font-primary;
+    }
+    .features-context{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.more-btn{
+    background-color: $dark-color;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+// Recently Added
+.recent-added{
+    padding-top: 10px ;
+    .heading-primary{
+        @include text-primary;
+        padding: 30px 0px 10px;
+    }
+
+}
+
+// Right panel
+.right-panel{
+    padding : 90px 200px;
+    width: 80%;
+}
+
+// Text card
+
+.card-container{
+    background-color: $light-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px #888888;
+    .card-header{
+        padding-bottom: 10px;
+    }
+}
+
+// Post container
+
+.post-text{
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 20px;
+    .post-content{
+        background-color: $dark-color;
+        width: 100%;
+        border:none;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .post-content:focus{
+        border: none !important;
+    }
+}
+
+.additional-features{
+    display: flex;
+    justify-content: space-around;
+    
+    .media-icon{
+        margin-right: 5px;
+    }   
+}
